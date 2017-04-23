@@ -1,5 +1,4 @@
 const fs = require('fs')
-const rimraf = require('rimraf')
 const expect = require('chai').expect
 const generateIcons = require('../lib')
 
@@ -13,7 +12,7 @@ describe('index.js', () => {
     return generateIcons(`${__dirname}/fixtures/icon.png`).then(results => {
       icons = results
       results.forEach(result => {
-        fs.writeFileSync(`${DIST_FOLDER}/${result.filename}`, result.image);
+        fs.writeFileSync(`${DIST_FOLDER}/${result.filename}`, result.image)
       })
     })
   })
