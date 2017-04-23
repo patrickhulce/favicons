@@ -19,7 +19,9 @@ describe('index.js', () => {
 
   it('should generate basic favicons', () => {
     const filteredIcons = icons.filter(icon => icon.prefix === 'favicon')
-    expect(filteredIcons).to.have.length(2)
+    expect(filteredIcons).to.have.length(3)
+    const icoFile = filteredIcons.find(icon => /favicon.ico/.test(icon.filename))
+    expect(icoFile).to.have.property('image').instanceOf(Buffer)
   })
 
   it('should generate Chrome icons', () => {
