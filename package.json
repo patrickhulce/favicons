@@ -1,5 +1,5 @@
 {
-  "name": "favicons",
+  "name": "@patrickhulce/favicons",
   "version": "0.0.0-development",
   "description": "Generates favicon files.",
   "main": "./lib/index.js",

@@ -1,5 +1,5 @@
-# favicons
-[![NPM Package](https://badge.fury.io/js/favicons.svg)](https://www.npmjs.com/package/favicons)
+# @patrickhulce/favicons
+[![NPM Package](https://img.shields.io/badge/npm-@patrickhulce/favicons-brightgreen.svg)](https://www.npmjs.com/package/@patrickhulce/favicons)
 [![Build Status](https://travis-ci.org/patrickhulce/favicons.svg?branch=master)](https://travis-ci.org/patrickhulce/favicons)
 [![Coverage Status](https://coveralls.io/repos/github/patrickhulce/favicons/badge.svg?branch=master)](https://coveralls.io/github/patrickhulce/favicons?branch=master)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
