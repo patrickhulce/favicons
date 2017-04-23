@@ -1,0 +1,42 @@
+{
+  "name": "favicons",
+  "version": "0.0.0-development",
+  "description": "Generates favicon files.",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "npm run test:lint && npm run test:unit",
+    "test:unit": "mocha --reporter spec 'test/**/*.test.js'",
+    "test:lint": "lint",
+    "test:coverage": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- 'test/**/*.test.js'",
+    "test:watch": "mocha --watch --reporter dot 'test/**/*.test.js'",
+    "semantic-release": "semantic-release pre && npm publish --access public && semantic-release post"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/patrickhulce/favicons.git"
+  },
+  "author": "Patrick Hulce <patrick.hulce@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/patrickhulce/favicons/issues"
+  },
+  "homepage": "https://github.com/patrickhulce/favicons#readme",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "sharp": "^0.17.3"
+  },
+  "devDependencies": {
+    "@patritech/lint": "^1.2.4",
+    "chai": "^3.5.0",
+    "cz-conventional-changelog": "^2.0.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.2.0",
+    "rimraf": "^2.6.1",
+    "semantic-release": "^6.3.2"
+  }
+}
