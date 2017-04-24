@@ -21,7 +21,7 @@ describe('index.js', () => {
 
   it('should generate basic favicons', () => {
     const filteredIcons = icons.filter(icon => icon.prefix === 'favicon')
-    expect(filteredIcons).to.have.length(3)
+    expect(filteredIcons).to.have.length(4)
     const pngFile = filteredIcons.find(icon => icon.filename === 'favicon-32x32.png')
     expect(pngFile).to.have.property('image').instanceOf(Buffer)
     const icoFile = filteredIcons.find(icon => icon.filename === 'favicon.ico')
